@@ -1,0 +1,113 @@
+*
+    box-sizing: border-box 
+$color-txt-w: #ffffff
+$color-txt-b: #373737
+$colorr: #ff9d00
+
+@import sect2.sass
+@import sect6.sass
+
+.sect-slider-bootst
+    width: 30%
+    background-color: green
+    margin: auto
+.carousel-control-prev-icon
+    background-color: red
+    color: red
+    border-radius: 50% 
+.carousel-control-next-icon
+    background-color: red
+    border-radius: 50% 
+.carousel-item
+    // height: 100%
+    h5
+        color: red
+    img
+        height: 400px
+
+
+.sect-fotorama
+    // background-color: green
+    padding-top: 40px
+    width: 40%
+    margin: auto
+
+// slick слайдер (его классы настройка):
+.slider
+    padding-top: 40px
+    width: 100%
+    min-width: 0 //Указывается если сам .slider флексовый или если его оболочка флексовая, это же указывается и для самой оболочки
+    position: relative
+    margin: auto
+    /* Слайдер */
+    .slick-slider
+    /* Слайдер запущен */
+    .slick-slider.slick-initialized
+    /* Слайдер с точками */
+    .slick-slider.slick-dotted
+    /* Ограничивающая оболочка */
+    .slick-list
+        overflow: hidden 
+    /* Лента слайдов */
+    .slick-track
+        display: flex
+        align-items: flex-start
+        // flex-direction: column//Устанавливается для вертикального слайдера, либо display: block
+    /* Слайд */
+    .slick-slide
+        // height: 430px//Устанавливается для вертикального слайдера
+        text-align: center
+        opacity: 0.5
+        transition: all 0.3s ease 0s//Плавный переход при прокрутке
+    /* Слайд активный (показывается) */
+    .slick-slide.slick-active
+    /* Слайд основной */
+    .slick-slide.slick-current
+    /* Слайд по центру */
+    .slick-slide.slick-center
+        opacity: 1
+    /* Клонированный слайд */
+    .slick-slide.slick-cloned
+    /* Стрелка */
+    .slick-arrow
+        position: absolute
+        top: 50%
+        z-index: 5
+        font-size: 0//убираем надпись с кнопки
+        width: 22px
+        height: 78px
+        border: 1px solid $colorr
+    /* Стрелка влево */
+    .slick-arrow.slick-prev
+        background: url(../images/dest/slider/rounded_rectangle_141.png) center no-repeat, url(../images/dest/slider/rectangle_140.png) center no-repeat
+        &:hover
+            background: url(../images/dest/slider/rounded_rectangle_149.png) center no-repeat, url(../images/dest/slider/rectangle_142.png) center no-repeat
+    /* Стрелка вправо */
+    .slick-arrow.slick-next
+        margin-left: 98%
+        background: url('../images/dest/slider/rounded_rectangle_145.png') center no-repeat, url('../images/dest/slider/rectangle_140.png') center no-repeat
+        &:hover
+            background: url('../images/dest/slider/rounded_rectangle_143.png') center no-repeat, url('../images/dest/slider/rectangle_142.png') center no-repeat 
+    /* Стрелка не активная */
+    .slick-arrow.slick-disabled
+        opacity: 0.2
+    /* Точки (булиты) */
+    .slick-dots
+        display: flex
+        justify-content: center
+        align-items: center
+    .slick-dots li
+        list-style: none
+        margin: 0px 10px
+    /* Активная точка */
+    .slick-dots li.slick-active button
+        background-color: rgba(red, 0.5)
+        border: 2px solid black
+    /* Элемент точки */
+    .slick-dots li button
+        font-size: 0
+        width: 10px
+        height: 10px
+        background-color: black
+        border-radius: 50%
+        border: none

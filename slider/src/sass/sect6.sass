@@ -1,0 +1,107 @@
+.sect6
+    width: 60%
+    margin: auto
+    .slid
+        display: inline-block
+        width: 47%
+        margin: auto
+        .slider-big
+            padding-top: 40px
+            width: 100%
+            min-width: 0 //Указывается если сам .slider флексовый или если его оболочка флексовая, это же указывается и для самой оболочки
+            position: relative
+            /* Ограничивающая оболочка */
+            .slick-list
+                overflow: hidden 
+            /* Лента слайдов */
+            .slick-track
+                display: flex
+                align-items: flex-start
+            /* Слайд */
+            .slick-slide
+                width: 535px
+                height: 377px
+            .slick-arrow
+                display: none
+                font-size: 0//убираем надпись с кнопки
+                width: 0px
+                height: 0px
+                border: none
+                background-color: white
+
+        .slider-small
+            // display: flex
+            margin-left: 26px
+            padding-top: 0px
+            width: 90%
+            min-width: 0 //Указывается если сам .slider флексовый или если его оболочка флексовая, это же указывается и для самой оболочки
+            position: relative
+            // text-align: center
+            // justify-content: center 
+            /* Ограничивающая оболочка */
+            .slick-list
+                overflow: hidden 
+            /* Лента слайдов */
+            .slick-track
+                display: flex
+                align-items: flex-start
+                padding-left: 49px
+            /* Слайд */
+            .slick-slide
+                width: 116px
+                height: 78px
+                margin-left: 6px
+                text-align: center
+                // opacity: 0.5
+                transition: all 0.3s ease 0s//Плавный переход при прокрутке
+                // filter: brightness(52%)
+                // -webkit-filter: brightness(52%)
+                position: relative
+                &::before 
+                    content: ""
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    background-color: rgba(0, 0, 0, 0.6)
+            /* Слайд активный (показывается) */
+            .slick-slide.slick-active
+                // filter: none
+                position: relative
+                &:before 
+                    content: ""
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    background-color: rgba(0, 0, 0, 0.0)
+                // // opacity: 1
+            /* Слайд основной */
+            .slick-slide.slick-current
+            /* Слайд по центру */
+            .slick-slide.slick-center                
+                // opacity: 1
+            /* Стрелка */
+            .slick-arrow
+                position: absolute
+                top: 50%
+                z-index: 5
+                font-size: 0//убираем надпись с кнопки
+                width: 22px
+                height: 78px
+                border: 1px solid $colorr
+            /* Стрелка влево */
+            .slick-arrow.slick-prev
+                margin-top: -39px
+                margin-left: -25px
+                background: url(../images/dest/slider/rounded_rectangle_141.png) center no-repeat, url(../images/dest/slider/rectangle_140.png) center no-repeat
+                &:hover
+                    background: url(../images/dest/slider/rounded_rectangle_149.png) center no-repeat, url(../images/dest/slider/rectangle_142.png) center no-repeat
+            /* Стрелка вправо */
+            .slick-arrow.slick-next
+                margin-top: -39px
+                margin-left: 101%
+                background: url('../images/dest/slider/rounded_rectangle_145.png') center no-repeat, url('../images/dest/slider/rectangle_140.png') center no-repeat
+                &:hover
+                    background: url('../images/dest/slider/rounded_rectangle_143.png') center no-repeat, url('../images/dest/slider/rectangle_142.png') center no-repeat 
+            /* Стрелка не активная */
+            .slick-arrow.slick-disabled
+                opacity: 0.2

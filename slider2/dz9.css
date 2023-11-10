@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #f9f9f9;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+.dop {
+  display: flex;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  align-content: center;
+  width: 1140px;
+  background-image: linear-gradient(to bottom right, #01c4e0 0%, #ecf2f3 65%);
+  height: 100vh;
+}
+
+.animal {
+  font-size: 30px;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  border: 1px solid #000;
+  justify-content: center;
+  width: 275px;
+  color: #fff;
+  transition: all 0.5s;
+  margin-bottom: 100px;
+  font-family: "Bad Script", sans-serif;
+}
+.animal:hover {
+  flex-basis: 75%;
+}
+
+.animal-1 {
+  background: url(./animal/Deliberate_11_beauty_salon_in_the_jungle_a_monkey_is_sitting_i_0.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.animal-2 {
+  background: url(./animal/Deliberate_11_beauty_salon_in_the_jungle_a_monkey_is_sitting_i_0987.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.animal-3 {
+  background: url(./animal/Deliberate_11_monkey_at_the_table_paints_nails_many_butterflie_0.jpg) no-repeat center center;
+  background-size: 100% 130%;
+}
+
+.animal-4 {
+  background: url(./animal/Deliberate_11_salon_in_the_jungle_a_monkey_is_sitting_in_a_cha_034.jpg) no-repeat center center;
+  background-size: 170% 150%;
+}/*# sourceMappingURL=dz9.css.map */
