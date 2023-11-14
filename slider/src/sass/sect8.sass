@@ -1,0 +1,61 @@
+.sect8-reviews
+    padding-right: 200px
+    margin-top: 30px
+    background-color: #f4f4f4
+    &__title
+        @include title
+    .sliderr
+        padding-top: 40px
+        width: 60%
+        min-width: 0 //Указывается если сам .slider флексовый или если его оболочка флексовая, это же указывается и для самой оболочки
+        position: relative
+        margin: auto
+        margin-top: -30px
+        /* Слайдер */
+        .slick-slider
+        /* Слайдер запущен */
+        .slick-slider.slick-initialized
+        /* Слайдер с точками */
+        .slick-slider.slick-dotted
+        /* Ограничивающая оболочка */
+        .slick-list
+            overflow: hidden 
+        /* Лента слайдов */
+        .slick-track
+            display: flex
+            align-items: flex-start
+            // flex-direction: column//Устанавливается для вертикального слайдера, либо display: block
+        /* Слайд */
+        .slick-slide
+            // height: 430px//Устанавливается для вертикального слайдера
+            text-align: center
+            opacity: 1
+            transition: all 0.3s ease 0s//Плавный переход при прокрутке
+        /* Слайд активный (показывается) */
+        .slick-slide.slick-active
+        /* Слайд основной */
+        .slick-slide.slick-current
+        /* Слайд по центру */
+        .slick-slide.slick-center
+            opacity: 1
+        /* Клонированный слайд */
+        .slick-slide.slick-cloned
+        /* Стрелка */
+        .slick-arrow
+            position: absolute
+            top: 50%
+            z-index: 5
+            font-size: 0//убираем надпись с кнопки
+            width: 10px
+            height: 47px
+            border: none
+        /* Стрелка влево */
+        .slick-arrow.slick-prev
+            background: url(../images/dest/left.png) center no-repeat
+        /* Стрелка вправо */
+        .slick-arrow.slick-next
+            margin-left: 98%
+            background: url('../images/dest/right.png') center no-repeat
+        /* Стрелка не активная */
+        .slick-arrow.slick-disabled
+            // opacity: 0.2

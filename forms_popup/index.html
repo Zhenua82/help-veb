@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="first_form">
+        <form action="PHPMailer/mail_1.php" method="POST" class="formm">
+            <input type="tel" name="user_phone" placeholder="Введите номер телефона">
+            <button type="submit" id="bt1">
+                Оставить заявку!
+            </button>
+        </form>
+    </div>
+
+    <div class="second_form">
+        <form action="PHPMailer/mail.php" method="POST" enctype="multipart/form-data" class="form">
+            <input class="picter-input" type="tel" name="user_phone" placeholder="Введите номер телефона" id="user_phone">
+            <label for=""> Загрузите файл</label>
+            <input type="file" name="file" id="file">
+            <button type="submit" class="picter-btn" id="bt2">Оставить заявку!</button>
+        </form>
+    </div>
+        
+    <div class="third_form">
+        <form action="telegram.php" method="POST">
+            <input class="picter-input" type="tel" name="user_phone" placeholder="+7(XXX)XXX-XX-XX">
+            <button type="submit" class="picter-btn">Оставить заявку!</button>
+        </form>
+    </div>
+
+    <div class="popumail">
+        <div class="window" >
+            <div class="xx" id="xxx">
+                &times;
+            </div>
+            <div class="window-title">
+                Спасибо за обращение! <br> Мы с вами свяжемся.
+            </div>
+        </div>
+    </div><!-- /.popumail -->
+    <script src="js/code.jquery.com_jquery-2.2.4.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
