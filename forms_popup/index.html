@@ -33,6 +33,18 @@
         </form>
     </div>
 
+    <div class="captcha_form">
+        <form action="PHPMailer/mail_capt.php" method="POST">
+            <input id="teleph" type="tel" name="user_phone" placeholder="Введите номер телефона" required>
+            
+            <!-- Капча -->
+            <label id="capt" for="captcha">captcha: 2 + 2 = </label>
+            <input type="text" name="captcha" id="captcha" placeholder="?" required>
+            
+            <button type="submit" id="bt1">Оставить заявку!</button>
+        </form>
+    </div>
+
     <div class="popumail">
         <div class="window" >
             <div class="xx" id="xxx">

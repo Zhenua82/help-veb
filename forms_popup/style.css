@@ -25,6 +25,9 @@ input{
   margin-top: 50px;
   margin-bottom: 50px;  
 }
+.captcha_form{
+    margin-top: 50px;
+}
 label{
     display: block;
     margin-top: 5px;
